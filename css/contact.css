@@ -1,0 +1,97 @@
+.contact {
+  place-content: center;
+  place-items: center;
+  gap: 1.5em;
+  min-height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.contact form {
+  display: grid;
+  gap: 1em;
+  padding-top: 2rem;
+}
+
+.username,
+.email,
+.msg {
+  width: 100%;
+  display: grid;
+  gap: 0.5em;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 0.1rem 0.5rem;
+  font-weight: 500;
+  background: transparent;
+  border: 0.7px solid var(--dark);
+  color: var(--dark);
+  border-radius: 0.2rem;
+}
+
+input:valid {
+  outline-color: green;
+}
+input:invalid {
+  outline-color: red;
+}
+
+textarea:valid {
+  outline-color: green;
+}
+textarea:invalid {
+  outline-color: red;
+}
+
+textarea {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+/* input:focus,
+textarea:focus {
+  outline: 1px solid #333;
+} */
+
+.contact button {
+  background-color: #646cff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.contact button:is(:hover, :focus) {
+  background-color: #535bf2;
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    display: grid;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .contact form {
+    padding-top: 0;
+  }
+
+  .username,
+  .email,
+  .msg {
+    width: 500px;
+  }
+
+  .contact button {
+    margin: 0 auto;
+    font-size: 0.925rem;
+  }
+}

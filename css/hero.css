@@ -1,0 +1,33 @@
+.hero {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 1.5em;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 4rem 0;
+  padding-top: 7rem;
+}
+
+.hero h1 {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.hero img {
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  margin-left: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+
+  .hero img {
+    border-top-left-radius: 15rem;
+    border-bottom-left-radius: 15rem;
+  }
+}

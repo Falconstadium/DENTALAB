@@ -1,0 +1,39 @@
+.service {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 1.5em;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0.5rem 1.2rem;
+  padding-top: 5rem;
+}
+
+.services {
+  display: grid;
+  gap: 4em;
+}
+
+.services p {
+  font-weight: 500;
+  padding-top: 0.3rem;
+  font-size: 1.4rem;
+}
+
+.services img {
+  width: 100%;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .services {
+   grid-template-columns: repeat(2,1fr);
+   grid-row: 2em;
+  }
+
+  .services img {
+    width: 60%;
+    border-radius: 0.4rem;
+  }
+}

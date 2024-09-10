@@ -1,0 +1,26 @@
+footer {
+  background-color: #04293a;
+  color: #f5f5f5;
+  padding: 0.5rem;
+  font-weight: 500;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+footer img {
+  width: 30px;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    justify-content: space-around;
+  }
+}
