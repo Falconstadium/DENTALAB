@@ -62,15 +62,39 @@ textarea:focus {
 .contact button {
   background-color: #646cff;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.3rem 1rem;
   font-size: 0.8rem;
   border-radius: 0.3rem;
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
+  display: grid;
+  place-content: center;
 }
 .contact button:is(:hover, :focus) {
   background-color: #535bf2;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s ease infinite;
+}
+@keyframes spin {
+  from {
+    rotate: 0turn;
+  }
+  to {
+    rotate: 1turn;
+  }
+}
+
+.success {
+  background-color: #fff;
+  color: #646cff;
 }
 
 @media (min-width: 1024px) {
