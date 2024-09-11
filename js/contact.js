@@ -10,7 +10,7 @@ submitBtn.onclick = function () {
       this.innerHTML = '<div class="loader"></div>';
     }, 1000);
     setTimeout(() => {
-      this.innerHTML = 'Message Sent!';
+      this.innerHTML = '<button data-i18="sent_msg"><button/>';
       this.style =
         'background-color: #fff; border:1px solid #646cff; color: #646cff; font-weight: 600;';
     }, 3000);

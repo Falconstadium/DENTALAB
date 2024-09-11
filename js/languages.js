@@ -21,6 +21,7 @@ const translations = {
     form_email: 'Email :',
     form_msg: 'Message :',
     form_submit: 'Submit',
+    sent_msg: 'Message sent successfully',
   },
 
   fr: {
@@ -32,6 +33,8 @@ const translations = {
     hero_heading:
       "Bienvenue dans notre laboratoire, l'endroit idéal pour prendre soin de vos dents, avec un look élégant.",
     about_title: 'À propos de nous',
+    about_section:
+      'Bienvenue chez DENTALAB! Nous sommes dédiés à fournir des services dentaires de premier ordre axés sur la qualité et les soins aux patients. Nos professionnels expérimentés sont engagés à assurer la santé et la satisfaction dentaires. Chez DENTALAB, nous vous proposons une large gamme de services adaptés à vos besoins. Contactez-nous dès aujourd’hui pour en savoir plus sur la façon dont nous pouvons vous aider à obtenir un sourire sain et beau.',
     service_title: 'Nos services',
     service_section: 'Voici une liste de certains de nos services',
     extraction: 'extraction de dent',
@@ -43,8 +46,7 @@ const translations = {
     form_email: 'Email :',
     form_msg: 'Message :',
     form_submit: 'Envoyer',
-    about_section:
-      'Bienvenue chez DENTALAB! Nous sommes dédiés à fournir des services dentaires de premier ordre axés sur la qualité et les soins aux patients. Nos professionnels expérimentés sont engagés à assurer la santé et la satisfaction dentaires. Chez DENTALAB, nous vous proposons une large gamme de services adaptés à vos besoins. Contactez-nous dès aujourd’hui pour en savoir plus sur la façon dont nous pouvons vous aider à obtenir un sourire sain et beau.',
+    sent_msg: 'Message envoyé avec succès',
   },
 };
 

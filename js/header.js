@@ -5,9 +5,12 @@ const lightMode = () => {
   document.body.classList.toggle('dark-theme');
   lightModeIcon.style.display = 'none';
   darkModeIcon.style.display = 'block';
+  const isLightMode = document.body.classList.contains('dark-theme');
+  localStorage.setItem('mode', isLightMode);
 };
-const theme = localStorage.getItem('darkTheme');
-if (theme === true) {
+
+const lighmode = localStorage.getItem('mode');
+if (lighmode === 'true') {
   document.body.classList.add('dark-theme');
 }
 
@@ -15,9 +18,14 @@ const darkMode = () => {
   document.body.classList.toggle('dark-theme');
   lightModeIcon.style.display = 'block';
   darkModeIcon.style.display = 'none';
-  const isDark = document.body.classList.contains('dark-theme');
-  localStorage.setItem('darkTheme', isDark);
+  const isDarkMode = document.body.classList.contains('dark-theme');
+  localStorage.setItem('dark', isDarkMode);
 };
+
+const darkmode = localStorage.getItem('dark');
+if (darkmode === 'true') {
+  document.body.classList.add('dark-theme');
+}
 
 lightModeIcon.addEventListener('click', lightMode);
 darkModeIcon.addEventListener('click', darkMode);
