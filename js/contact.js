@@ -4,9 +4,10 @@ const userName = document.getElementById('username');
 const userEmail = document.getElementById('email');
 const msgArea = document.getElementById('msg');
 
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+submitBtn.addEventListener('click', () => {
   setTimeout(() => {
     userName.value = userEmail.value = msgArea.value = '';
-  }, 1500);
+  }, 2000);
 });
+
+//form

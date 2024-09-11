@@ -54,8 +54,14 @@
         </svg>
 
         <select>
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
+          <option value="en">
+            EN
+            <img src="img/british.svg" alt="" />
+          </option>
+          <option value="fr">
+            FR
+            <img src="img/france flag.jpg" alt="" />
+          </option>
         </select>
       </div>
     </header>
@@ -126,7 +132,11 @@
 
     <section class="contact" id="contact">
       <h1 data-i18="contact_title">Get In Touch</h1>
-      <form action="">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="929af5b4-048f-466d-8f9b-e4a72c1b4b4f" />
         <div class="username">
           <label for="username" data-i18="form_name">Full Name :</label>
           <input type="text" name="name" id="username" required />
@@ -157,6 +167,7 @@
     <script>
       AOS.init();
     </script>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
