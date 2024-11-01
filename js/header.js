@@ -37,3 +37,16 @@ const menuList = document.querySelector('.social_menu');
 menuIcon.addEventListener('click', () => {
   menuList.classList.toggle('open');
 });
+
+const clearIcon = document.getElementById('clear-icon');
+
+menuIcon.addEventListener('click', () => {
+  clearIcon.style.display = 'block';
+  menuIcon.style.display = 'none';
+});
+
+clearIcon.addEventListener('click', () => {
+  menuList.classList.toggle('open');
+  menuIcon.style.display = 'block';
+  clearIcon.style.display = 'none';
+});

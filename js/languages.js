@@ -6,7 +6,7 @@ const translations = {
     services: 'Services',
     footer: 'All rights reserved',
     hero_heading:
-      'Welcome to our lab, the best place to make your teeth look great',
+      'Welcome to our lab, the best place to make your teeth look great.',
     about_title: 'About Us',
     about_section:
       'Welcome to DENTALAB! We are dedicated to providing top-notch dental services with a focus on quality and patient care. Our team of experienced professionals is committed to ensuring your dental health and satisfaction. At DENTALAB, we offer a wide range of services tailored to meet your needs. Contact us today to learn more about how we can help you achieve a healthy, beautiful smile.',

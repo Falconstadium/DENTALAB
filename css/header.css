@@ -89,25 +89,35 @@ option {
   color: #242224;
 }
 
+#clear-icon {
+  display: none;
+  width: 30px;
+}
+
 @media (max-width: 700px) {
+  header {
+    padding: 0.7rem 1rem;
+  }
+
   .social_menu {
     position: absolute;
-    top: 2.2rem;
+    top: 3.6rem;
     left: 0;
     right: 0;
     display: none;
     flex-direction: column;
     gap: 2em;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     transition: 0.3s;
     box-shadow: 0px -2px 10px -2px var(--light);
     background-color: #242224;
-    opacity: 0.9;
+    z-index: 100;
   }
   .social_menu li a {
-    font-size: 1rem;
-    color: var(--light);
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
   }
 
   .social_menu.open {
@@ -118,13 +128,14 @@ option {
 @media (min-width: 700px) {
   #menu-icon {
     display: none;
+    width: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   header {
     justify-content: space-around;
-    padding: 0.4rem 2rem;
+    padding: 0.8rem 2rem;
   }
   header .logo {
     font-size: 0.8rem;
