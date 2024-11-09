@@ -2,14 +2,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.2rem 1.5rem;
-  box-shadow: 1px 2px 5px -2px var(--dark);
-  left: 0;
-  top: 0;
-  position: fixed;
-  z-index: 200;
+  padding: 0.8rem 1.5rem;
   width: 100%;
-  background-color: var(--light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--white);
 }
 
 header .logo {
@@ -28,7 +27,7 @@ header img {
 }
 
 .social_menu {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1em;
   list-style: none;
@@ -36,7 +35,7 @@ header img {
 .social_menu li a {
   text-decoration: none;
   color: var(--dark);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875rem;
   padding: 0.3rem 0.8rem;
   border-radius: 0.275rem;
@@ -53,17 +52,17 @@ header img {
   gap: 1em;
 }
 .mode_icons svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  transition: scale 0.3s ease;
-}
-.mode_icons svg:hover {
-  scale: 1.1;
 }
 
+#light-theme {
+  width: 25px;
+}
 #dark-theme {
   display: none;
+  width: 25px;
 }
 
 select {
@@ -74,6 +73,9 @@ select {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+}
+select:hover {
+  color: #535bf2;
 }
 
 select:focus {
@@ -89,57 +91,59 @@ option {
   color: #242224;
 }
 
+.menu {
+  position: absolute;
+  width: 50%;
+  right: -50%;
+  top: 0;
+  min-height: 100dvh;
+  background: rgb(0, 0, 0/0.5);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  list-style: none;
+}
+.menu ul {
+  list-style: none;
+  display: grid;
+  gap: 2em;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+}
 #clear-icon {
-  display: none;
-  width: 30px;
+  width: 25px;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  cursor: pointer;
+  color: var(--dark);
 }
 
-@media (max-width: 700px) {
-  header {
-    padding: 0.7rem 1rem;
-  }
-
-  .social_menu {
-    position: absolute;
-    top: 3.6rem;
-    left: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: center;
-    padding: 1rem 0;
-    transition: 0.3s;
-    box-shadow: 0px -2px 10px -2px var(--light);
-    background-color: #242224;
-    z-index: 100;
-  }
-  .social_menu li a {
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 600;
-  }
-
-  .social_menu.open {
-    display: flex;
-  }
-}
-
-@media (min-width: 700px) {
-  #menu-icon {
-    display: none;
-    width: 30px;
-  }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   header {
     justify-content: space-around;
-    padding: 0.8rem 2rem;
+    padding: 1rem 0;
   }
   header .logo {
     font-size: 0.8rem;
     width: 35px;
+  }
+  #menu-icon {
+    display: none;
+  }
+
+  .social_menu {
+    display: flex;
   }
 
   .social_menu li a {

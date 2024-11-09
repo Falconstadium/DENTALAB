@@ -72,8 +72,11 @@ h6 {
 }
 
 :root {
-  --dark: #121212;
+  --dark: #101010;
   --light: #f9f9f9;
+
+  --white: white;
+  --black: #090909;
 }
 
 html,
@@ -89,6 +92,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
   width: 100%;
+  transition: all 0.3s;
 }
 
 h1 {
@@ -97,5 +101,8 @@ h1 {
 
 .dark-theme {
   --dark: #f9f9f9;
-  --light: #121212;
+  --light: #101010;
+
+  --white: #090909;
+  --black: white;
 }

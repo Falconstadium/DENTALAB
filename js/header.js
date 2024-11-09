@@ -1,52 +1,42 @@
-const lightModeIcon = document.getElementById('light-theme');
-const darkModeIcon = document.getElementById('dark-theme');
+const sunIcon = document.getElementById('light-theme');
+const moonIcon = document.getElementById('dark-theme');
 
 const lightMode = () => {
-  document.body.classList.toggle('dark-theme');
-  lightModeIcon.style.display = 'none';
-  darkModeIcon.style.display = 'block';
-  const isLightMode = document.body.classList.contains('dark-theme');
-  localStorage.setItem('mode', isLightMode);
+  document.body.classList.remove('dark-theme');
+  moonIcon.style.display = 'block';
+  sunIcon.style.display = 'none';
+  localStorage.setItem('dark', 'false');
 };
-
-const lighmode = localStorage.getItem('mode');
-if (lighmode === 'true') {
-  document.body.classList.add('dark-theme');
-}
 
 const darkMode = () => {
-  document.body.classList.toggle('dark-theme');
-  lightModeIcon.style.display = 'block';
-  darkModeIcon.style.display = 'none';
-  const isDarkMode = document.body.classList.contains('dark-theme');
-  localStorage.setItem('dark', isDarkMode);
+  document.body.classList.add('dark-theme');
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'block';
+  localStorage.setItem('dark', 'true');
 };
 
-const darkmode = localStorage.getItem('dark');
-if (darkmode === 'true') {
+const isDarkMode = localStorage.getItem('dark') === 'true';
+if (isDarkMode) {
   document.body.classList.add('dark-theme');
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'block';
+} else {
+  document.body.classList.remove('dark-theme');
+  moonIcon.style.display = 'block';
+  sunIcon.style.display = 'none';
 }
 
-lightModeIcon.addEventListener('click', lightMode);
-darkModeIcon.addEventListener('click', darkMode);
+sunIcon.addEventListener('click', lightMode);
+moonIcon.addEventListener('click', darkMode);
 
 //menu
 const menuIcon = document.getElementById('menu-icon');
-const menuList = document.querySelector('.social_menu');
+const cancelBtn = document.getElementById('clear-icon');
+const menuBar = document.querySelector('.menu');
 
 menuIcon.addEventListener('click', () => {
-  menuList.classList.toggle('open');
+  menuBar.style.right = 0;
 });
-
-const clearIcon = document.getElementById('clear-icon');
-
-menuIcon.addEventListener('click', () => {
-  clearIcon.style.display = 'block';
-  menuIcon.style.display = 'none';
-});
-
-clearIcon.addEventListener('click', () => {
-  menuList.classList.toggle('open');
-  menuIcon.style.display = 'block';
-  clearIcon.style.display = 'none';
+cancelBtn.addEventListener('click', () => {
+  menuBar.style.right = '-50%';
 });
