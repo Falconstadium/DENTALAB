@@ -72,8 +72,8 @@ h6 {
 }
 
 :root {
-  --dark: #101010;
-  --light: #f9f9f9;
+  --dark: #121212;
+  --light: #f7f7f7;
 
   --white: white;
   --black: #090909;
@@ -100,8 +100,8 @@ h1 {
 }
 
 .dark-theme {
-  --dark: #f9f9f9;
-  --light: #101010;
+  --dark: #f7f7f7;
+  --light: #121212;
 
   --white: #090909;
   --black: white;

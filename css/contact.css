@@ -3,8 +3,8 @@
   place-items: center;
   gap: 1.5em;
   min-height: 100vh;
-  padding: 0 2rem;
-  position: relative;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .contact form {
@@ -97,7 +97,7 @@ textarea:focus {
   color: #646cff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .contact {
     display: grid;
     margin: 0 auto;

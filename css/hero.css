@@ -20,7 +20,7 @@
   padding-right: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 0 0 2rem;
@@ -30,5 +30,9 @@
   .hero img {
     border-top-left-radius: 15rem;
     border-bottom-left-radius: 15rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
   }
 }
