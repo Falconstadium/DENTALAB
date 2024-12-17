@@ -89,10 +89,14 @@ body {
   background-color: var(--light);
   color: var(--dark);
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   min-height: 100dvh;
   width: 100%;
   transition: all 0.3s;
+}
+
+section:nth-child(odd) {
+  background: var(--white);
 }
 
 h1 {
