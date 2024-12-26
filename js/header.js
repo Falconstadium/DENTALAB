@@ -1,3 +1,12 @@
+window.addEventListener('scroll', () => {
+  const stickyNav = document.querySelector('header');
+  if (window.scrollY > 10) {
+    stickyNav.classList.add('sticky');
+  } else {
+    stickyNav.classList.remove('sticky');
+  }
+});
+
 const sunIcon = document.getElementById('light-theme');
 const moonIcon = document.getElementById('dark-theme');
 

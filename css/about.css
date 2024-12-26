@@ -5,33 +5,50 @@
   gap: 1.5em;
   min-height: 100dvh;
   text-align: center;
-  padding: 5rem 1.2rem;
+  padding: 3rem 1.3rem;
+  background-color: var(--light);
+}
+
+.about_section {
+  display: grid;
+  gap: 1em;
+}
+
+.about h2 {
+  font-size: 1.4rem;
+}
+.about p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .about img {
   padding-top: 1rem;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 @media (min-width: 900px) {
   .about {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 3rem;
-    column-gap: 4em;
+    gap: 0;
+    margin: 0 auto;
+    padding: 0 7rem;
   }
 
   .about_section {
-    display: grid;
-    gap: 2em;
+    place-items: start;
   }
 
   .about p {
-    text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+
   .about img {
     border-radius: 0.8rem;
-    width: 500px;
+    width: 300px;
+    aspect-ratio: 1/1;
     order: -1;
   }
 }

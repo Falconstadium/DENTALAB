@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -12,11 +12,11 @@ header {
 }
 
 header .logo {
-  width: 30px;
+  width: 25px;
   display: flex;
   align-items: center;
   gap: 0.5em;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-decoration: none;
   color: #646cff;
 }
@@ -24,6 +24,10 @@ header .logo {
 header img {
   background-color: #535bf2;
   border-radius: 50%;
+}
+
+header.sticky {
+  box-shadow: 0 -1px 8px 1px var(--dark);
 }
 
 .social_menu {
@@ -56,24 +60,24 @@ header img {
   gap: 1em;
 }
 .mode_icons svg {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
 #light-theme {
-  width: 25px;
+  width: 20px;
 }
 #dark-theme {
   display: none;
-  width: 25px;
+  width: 20px;
 }
 
 select {
   background-color: transparent;
   color: var(--dark);
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.675rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
@@ -87,7 +91,7 @@ select:focus {
 }
 
 option {
-  font-size: 0.825rem;
+  font-size: 0.8rem;
   font-weight: 500;
   border: none;
   padding: 0.1rem 3rem;
@@ -120,6 +124,7 @@ option {
   text-decoration: none;
   color: var(--dark);
   font-weight: 600;
+  font-size: 0.8rem;
 }
 .menu ul li a:hover {
   text-decoration: underline;
@@ -151,6 +156,6 @@ option {
   }
 
   .social_menu li a {
-    font-size: 0.975rem;
+    font-size: 0.875rem;
   }
 }

@@ -1,10 +1,15 @@
 .contact {
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--light);
+}
+
+.contact h2 {
+  font-size: 1.4rem;
 }
 
 .contact form {
@@ -17,13 +22,13 @@
 .username,
 .email,
 .msg {
-  width: 100%;
   display: grid;
   gap: 0.5em;
 }
 
 label {
   font-weight: 500;
+  font-size: 0.8rem;
 }
 
 input,
@@ -96,22 +101,16 @@ textarea {
 @media (min-width: 900px) {
   .contact {
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
 
   .contact form {
     padding-top: 0;
-    max-width: 500px;
-  }
-
-  .username,
-  .email,
-  .msg {
-    width: 500px;
+    max-width: 400px;
   }
 
   .contact button {
     margin: 0 auto;
-    font-size: 0.925rem;
+    font-size: 0.875rem;
   }
 }

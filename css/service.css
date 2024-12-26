@@ -8,15 +8,24 @@
   padding: 3rem 1.2rem;
 }
 
+.service h2 {
+  font-size: 1.4rem;
+}
+.service p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .services {
   display: grid;
   gap: 4em;
 }
 
 .services p {
-  font-weight: 500;
   padding-top: 0.3rem;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 }
 
 .services img {
@@ -27,6 +36,12 @@
 }
 
 @media (min-width: 900px) {
+  .service {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 5rem;
+  }
+
   .services {
     grid-template-columns: repeat(2, 1fr);
     grid-row: 2em;
