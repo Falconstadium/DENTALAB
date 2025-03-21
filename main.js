@@ -20,3 +20,4 @@ import './js/contact';
 
 //footer
 import './css/footer.css';
+import './js/footer.js';
