@@ -6,7 +6,6 @@
   min-height: 100dvh;
   text-align: center;
   padding: 3rem 1.3rem;
-  background-color: var(--light);
 }
 
 .about_section {
@@ -23,10 +22,15 @@
   text-align: justify;
 }
 
-.about img {
-  padding-top: 1rem;
-  border-radius: 0.5rem;
-  object-fit: cover;
+.chair-img {
+  background-image: url(/img/chair.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 0.4rem;
+  box-shadow: var(--shadow) 0px 7px 29px 0px;
 }
 
 @media (min-width: 900px) {
@@ -39,16 +43,15 @@
 
   .about_section {
     place-items: start;
+    order: 2;
   }
 
   .about p {
     font-size: 1rem;
   }
 
-  .about img {
-    border-radius: 0.8rem;
-    width: 300px;
+  .chair-img {
+    width: 320px;
     aspect-ratio: 1/1;
-    order: -1;
   }
 }

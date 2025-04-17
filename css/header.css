@@ -101,11 +101,11 @@ option {
 
 .menu {
   position: absolute;
-  width: 50%;
-  right: -50%;
+  width: 60%;
+  right: -60%;
   top: 0;
   min-height: 100dvh;
-  background: rgb(0, 0, 0/0.5);
+  background-color: var(--menu);
   backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
@@ -124,7 +124,8 @@ option {
   text-decoration: none;
   color: var(--dark);
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 .menu ul li a:hover {
   text-decoration: underline;

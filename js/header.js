@@ -45,9 +45,11 @@ const menuBar = document.querySelector('.menu');
 
 menuIcon.addEventListener('click', () => {
   menuBar.style.right = 0;
+  document.body.classList.add('open');
 });
 cancelBtn.addEventListener('click', () => {
-  menuBar.style.right = '-50%';
+  menuBar.style.right = '-60%';
+  document.body.classList.remove('open');
 });
 
 //active-links

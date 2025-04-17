@@ -77,6 +77,11 @@ h6 {
 
   --white: white;
   --black: #090909;
+
+  --shadow: rgba(100, 100, 111, 0.2);
+
+  --open: rgba(24, 24, 26, 0.4);
+  --menu: rgba(255, 255, 255, 0.5);
 }
 
 .dark-theme {
@@ -85,6 +90,11 @@ h6 {
 
   --white: #090909;
   --black: white;
+
+  --shadow: rgba(255, 255, 255, 0.2);
+
+  --open: rgb(26, 26, 29);
+  --menu: rgba(34, 34, 39, 0.8);
 }
 
 html,
@@ -101,4 +111,8 @@ body {
   min-height: 100dvh;
   width: 100%;
   transition: all 0.3s;
+}
+
+.open {
+  background-color: var(--open) !important;
 }
